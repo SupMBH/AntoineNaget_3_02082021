@@ -206,7 +206,9 @@ form {
     padding-right: 3rem;
 }
 .recherche p {
+    display: block;
     text-align: center;
+    padding-left: 1rem;    
 }
 /*BOUTTON explorer index*/
 .recherche__btn {
