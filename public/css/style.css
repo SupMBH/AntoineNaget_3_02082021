@@ -464,24 +464,69 @@ form {
     transform: scale(1.05);
     transition: all 0.1s ease-in-out;
 }
-/*effet survol des coeur*/
-
-
-
-
-/*effet LOADING SPINNER*/
-
-
-
-
+/*LOADING SPINNER*/
+.spinner__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: cssAnim 0s 1s forwards;
+    animation: cssAnim 0s 1s forwards;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: #FFFFFF;
+  }  
+  .spinner__container--logospinner {
+    font-size: 2rem;
+    font-family: "Shrikhand";
+    color: #474444;
+    /*position: absolute;*/
+    animation: spin 0.5s linear infinite;
+    -webkit-animation: spin 0.5s linear infinite;
+  }
+  @-webkit-keyframes cssAnim {
+    to {
+      visibility: hidden;
+      display: none;
+    }
+  }  
+  @keyframes cssAnim {
+    to {
+      visibility: hidden;
+      display: none;
+    }
+  }
+  @-webkit-keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 /*effet d'apparition progressive des menus*/
+
+
+
+
+/*effet dynamique rotatif au survol de chaque plat*/
 .menu__pastille--validation {
     display: none;
 }
+/*EFFETS COEURS*/
 
-
-
-/*effet dynamique au survol de chaque plat*/
 
 
 
