@@ -161,14 +161,14 @@ h1 {
 }
 .menu__btn button {
     border-radius: 3rem;
-    background-color:#ff79da;
+    background-color:#9356dc;
     color: white;
     font-size:0.90rem;
     padding: 0.8rem;
     width: 50%;
     border-style: none;
     cursor: pointer;
-    box-shadow: 3px 3px 3px 3px #eaeaea;
+    box-shadow: 2px 2px 2px 2px #eaeaea;
 }
 /*------------INDEX-----------------------------------------*/
 /*localisation*/
@@ -226,7 +226,7 @@ form {
     width: 60%;
     border-style: none;
     cursor: pointer;
-    box-shadow: 3px 3px 3px 3px #eaeaea;
+    box-shadow: 2px 2px 2px 2px #eaeaea;
 }
 /*FONCTIONNEMENT*/
 .fonctionnement {
@@ -351,8 +351,6 @@ form {
     position: relative;
     top:0.5rem;
 }
-/*ASPECTS DYNAMIQUES*/
-
 /*--------------------------------------RESPONSIVE-------------------------------------*/
 /*RESPONSIVE TAB + DESKTOP*/
 @media screen and ( min-width : 731px ) {
@@ -384,3 +382,38 @@ form {
 }
 }
 /*-------------------------------------------------------------------------------------*/
+/*-----------------------------------ASPECTS DYNAMIQUES--------------------------------*/
+/*effets survols*/
+.recherche__btn button:hover {
+    box-shadow: 3px 3px 3px 3px #eaeaea;
+    background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+}
+.menu__btn button:hover {
+    box-shadow: 3px 3px 3px 3px #eaeaea;
+    background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+}
+.fonctionnement__pastille:hover {
+    background-color: #f5edff;    
+}
+
+
+
+
+
+
+/*effet de chargement sur la page d'acceuil*/
+
+
+
+
+/*effet d'apparition progressive des menus*/
+
+
+
+
+/*effet dynamique au survol de chaque plat*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
