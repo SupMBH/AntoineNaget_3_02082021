@@ -469,8 +469,6 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    -webkit-animation: cssAnim 0s 1s forwards;
-    animation: cssAnim 0s 1s forwards;
     visibility: visible;
     position: fixed;
     top: 0;
@@ -479,48 +477,42 @@ form {
     right: 0;
     z-index: 1;
     background: #FFFFFF;
-  }  
-  .spinner__container--logospinner {
+    animation: cssAnim 0s 1s forwards;
+}  
+.spinner__container--logospinner {
     font-size: 2rem;
     font-family: "Shrikhand";
     color: #474444;
-    /*position: absolute;*/
-    animation: spin 0.5s linear infinite;
-    -webkit-animation: spin 0.5s linear infinite;
-  }
-  @-webkit-keyframes cssAnim {
+    animation: spin 0.5s linear infinite;    
+}
+@keyframes cssAnim {
     to {
       visibility: hidden;
       display: none;
     }
-  }  
-  @keyframes cssAnim {
-    to {
-      visibility: hidden;
-      display: none;
-    }
-  }
-  @-webkit-keyframes spin {
+}
+@keyframes spin {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
     }
-  }
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+}
 /*effet d'apparition progressive des menus*/
-
-
-
-
+.menu__pastille {
+    animation: translation_opacite 0.5s linear both;
+}
+@keyframes translation_opacite {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
 /*effet dynamique rotatif au survol de chaque plat*/
 .menu__pastille--validation {
     display: none;
