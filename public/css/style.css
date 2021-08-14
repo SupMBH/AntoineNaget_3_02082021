@@ -383,21 +383,25 @@ form {
 }
 /*-------------------------------------------------------------------------------------*/
 /*-----------------------------------ASPECTS DYNAMIQUES--------------------------------*/
-/*effets survols*/
+/*effets survols boutons*/
 .recherche__btn button:hover {
     box-shadow: 3px 3px 3px 3px #eaeaea;
     background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+    transition: all 0.1s ease-in-out;
 }
 .menu__btn button:hover {
     box-shadow: 3px 3px 3px 3px #eaeaea;
     background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+    transition: all 0.1s ease-in-out;
 }
-.fonctionnement__pastille:hover {
-    background-color: #f5edff;    
+/*effets survols pastilles de fonctionnement de l'index*/
+.fonctionnement__pastille:hover  {
+    background-color: #f5edff;
+    transition: all 0.1s ease-in-out;      
 }
-
-
-
+.fonctionnement__pastille:hover .rrr {
+    color:#9356dc;
+}
 
 
 
