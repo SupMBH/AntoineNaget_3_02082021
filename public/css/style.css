@@ -350,6 +350,28 @@ form {
     position: relative;
     top:0.5rem;
 }
+/*nouveau*/
+.nouveau {
+    background-color: #99E2D0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 1rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: -150px;
+    right: 15px;
+    border-radius: 0.2rem;
+    /*transform: scale(1);*/
+    transition: all 0.1s ease-in-out;
+}
+.nouveau--text {    
+    font-weight: bold;
+    font-size:0.9rem ;
+    color: #078d6c;
+    position: relative;
+    top: -16px;
+}
 /*--------------------------------------RESPONSIVE-------------------------------------*/
 /*RESPONSIVE TAB + DESKTOP*/
 @media screen and ( min-width : 731px ) {
@@ -444,6 +466,11 @@ form {
 /*effets survol restaurants*/
 .restopastille:hover {
     transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+}
+/*effet nouveau*/
+.nouveau:hover {
+    border-radius: 3rem;
     transition: all 0.1s ease-in-out;
 }
 /*effet survol des coeur*/
