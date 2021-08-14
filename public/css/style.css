@@ -310,8 +310,7 @@ form {
     height: 12rem;
     object-fit: cover;
     border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    
+    border-top-right-radius: 1rem;    
 }
 .restopastille {
     display: flex;
@@ -357,6 +356,14 @@ form {
 /*header*/
 .header {
     justify-content: center;
+}
+.logo {
+    zoom: 200%;
+}
+.recherche h2 {
+    zoom: 150%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /*footer*/
 .footer ul {
@@ -465,7 +472,7 @@ form {
 
 
 
-/*effet de chargement sur la page d'acceuil*/
+/*effet LOADING SPINNER*/
 
 
 
