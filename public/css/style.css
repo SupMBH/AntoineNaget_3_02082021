@@ -371,6 +371,27 @@ form {
 .menu__btn button {    
     width: 20rem;
 }
+/*Fonctionnement*/
+.fonctionnement__container {
+    flex-direction:row;
+    width: 100%;
+    justify-content: space-around;
+}
+.fonctionnement__pastille {
+    width: 30%;    
+}
+/*menus*/
+.menu__liste {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__pastille {
+    width: 50%;
+}
+.menu__titre {
+    justify-content: space-evenly;
+}
 /*photos*/
 .resto__container {
     flex-direction: row;
@@ -401,6 +422,45 @@ form {
 }
 .fonctionnement__pastille:hover .rrr {
     color:#9356dc;
+    transition: all 0.1s ease-in-out;
+}
+/*effets survol footer*/
+.footer__link a:hover {
+    color:#99E2D0;
+    transition: all 0.1s ease-in-out;
+}
+/*effets survol header*/
+.fa-arrow-left:hover {
+    color: #99E2D0;
+    transition: all 0.1s ease-in-out;
+}
+/*effets survol restaurants*/
+.restopastille:hover {
+    transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+}
+/*effet survol des coeur*/
+.fa-heart {
+    position: relative;
+    z-index: 1;
+}
+.fa-heart::after:hover {
+    background-color:#9356dc;
+    opacity: 1;
+}
+.fa-heart::after {
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: #99E2D0;
+
+
+
+
 }
 
 
