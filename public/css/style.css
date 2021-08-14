@@ -483,7 +483,7 @@ form {
     font-size: 2rem;
     font-family: "Shrikhand";
     color: #474444;
-    animation: spin 0.5s linear infinite;    
+    animation: spin 5s linear infinite;    
 }
 @keyframes cssAnim {
     to {
@@ -493,15 +493,15 @@ form {
 }
 @keyframes spin {
     from {
-      transform: rotate(0deg);
+      transform: rotate(-60deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(240deg);
     }
 }
 /*effet d'apparition progressive des menus*/
 .menu__pastille {
-    animation: translation_opacite 0.5s linear both;
+    animation: translation_opacite 0.3s linear both;
 }
 @keyframes translation_opacite {
     0% {
