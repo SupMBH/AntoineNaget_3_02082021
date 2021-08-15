@@ -332,6 +332,15 @@ form {
     position: relative;
     top:-2rem;
 }
+.restopastille__nomenclature--byline,
+ .restopastille__nomenclature--titre,
+  .restopastille__BAS,
+   .restopastille__nomenclature,
+    .restopastille a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .restopastille__nomenclature {
     color: black;
 }
@@ -569,7 +578,7 @@ form {
 .plein {
     zoom: 105%;
     color: #FF79DA;
-    opacity: 1;
+    /*opacity: 1;*/
     transition: all 0.2s ease-in-out;
     transform: scale(0);
     transform-origin: bottom;
@@ -578,7 +587,7 @@ form {
     
 }
 .menu__coeur:hover .plein {
-    opacity: 1;
+    /*opacity: 1;*/
     transform: scale(1);    
 }
 /*-------------------------------------------------------------------------------------------*/
