@@ -443,26 +443,31 @@ form {
 /*effets survols pastilles de fonctionnement de l'index*/
 .fonctionnement__pastille:hover  {
     background-color: #f5edff;
-    transition: all 0.1s ease-in-out;      
+    transition: all 0.2s ease-in-out;      
 }
 .fonctionnement__pastille:hover .rrr {
     color:#9356dc;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transform: rotateZ(360deg);
 }
 /*effets survol footer*/
 .footer__link a:hover {
     color:#99E2D0;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;    
 }
 /*effets survol header*/
 .fa-arrow-left:hover {
     color: #99E2D0;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transform: rotateZ(360deg);
 }
 /*effets survol restaurants*/
 .restopastille:hover {
     transform: scale(1.05);
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.restopastille:hover .nouveau {
+    transform: rotateZ(360deg);
 }
 /*LOADING SPINNER*/
 .spinner__container {
