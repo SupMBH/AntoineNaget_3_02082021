@@ -170,7 +170,7 @@ h1 {
     cursor: pointer;
     box-shadow: 2px 2px 2px 2px #eaeaea;
 }
-/*------------INDEX-----------------------------------------*/
+/*---------------------------------------INDEX-------------------------------------------------*/
 /*localisation*/
 .localisation__saisie, input {
     background-color: #eaeaea;
@@ -349,6 +349,9 @@ form {
     font-size: 1.5rem;
     position: relative;
     top:0.5rem;
+}
+.restopastille__BAS button {
+    background-color: #FFFFFF;
 }
 /*nouveau*/
 .nouveau {
@@ -572,6 +575,7 @@ form {
     transform-origin: bottom;
     position: relative;
     right: 31px;
+    
 }
 .menu__coeur:hover .plein {
     opacity: 1;
