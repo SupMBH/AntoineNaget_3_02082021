@@ -138,11 +138,11 @@ h1 {
     font-size:0.90rem;
     font-weight:bolder; 
     padding-left:0.65rem;
-    padding-bottom: 0.25rem;    
+    padding-bottom: 0.25rem;        
 }
 .menu__pastille--ligne2 {
     font-size:0.8rem;
-    padding-left: 0.65rem;    
+    padding-left: 0.65rem;        
 }
 .menu__pastille--prix {
     font-size:0.8rem ;
@@ -151,7 +151,7 @@ h1 {
 }
 .menu__pastille__cotegauche {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 /*BOUTON COMMANDER des menus*/
 .menu__btn {
@@ -478,18 +478,18 @@ form {
     z-index: 1;
     background: #FFFFFF;
     animation: cssAnim 0s 1s forwards;
-}  
-.spinner__container--logospinner {
-    font-size: 2rem;
-    font-family: "Shrikhand";
-    color: #474444;
-    animation: spin 5s linear infinite;    
 }
 @keyframes cssAnim {
     to {
       visibility: hidden;
       display: none;
     }
+}  
+.spinner__container--logospinner {
+    font-size: 2rem;
+    font-family: "Shrikhand";
+    color: #474444;
+    animation: spin 5s linear infinite;    
 }
 @keyframes spin {
     from {
@@ -501,9 +501,9 @@ form {
 }
 /*effet d'apparition progressive des menus*/
 .menu__pastille {
-    animation: translation_opacite 0.3s linear both;
+    animation: apparition_prog 0.3s linear both;
 }
-@keyframes translation_opacite {
+@keyframes apparition_prog {
     0% {
       transform: translateY(100%);
       opacity: 0;
@@ -514,8 +514,47 @@ form {
     }
 }
 /*effet dynamique rotatif au survol de chaque plat*/
+.menu__pastille {
+    height: 37px;
+}
+.menu__pastille--ligne2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.menu__pastille__cotegauche {
+    width: 305px;
+    height: 37px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fa-check-circle {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
 .menu__pastille--validation {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 59px;
+    position: relative;
+    top: 11px;
+    width: 30%;
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: #99E2D0;
+    font-size: 1.2rem;
+    border-top-right-radius:0.7rem ;
+    border-bottom-right-radius:0.7rem ;
+}
+.menu__pastille:hover .menu__pastille--validation {
+    max-width: 50px;
+}
+.menu__pastille:hover .fa-check-circle {
+    transform: rotateZ(360deg);
 }
 /*EFFETS COEURS*/
 
