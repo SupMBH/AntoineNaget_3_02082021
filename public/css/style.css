@@ -327,7 +327,6 @@ form {
     background-color: white;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    align-items: baseline;
     justify-content: space-between;
     position: relative;
     top:-2rem;
@@ -576,18 +575,19 @@ form {
 /*EFFETS COEURS*/
 /*<i class="fas fa-heart"></i>*/
 .plein {
-    zoom: 105%;
+    zoom: 100%;
     color: #FF79DA;
-    /*opacity: 1;*/
     transition: all 0.2s ease-in-out;
     transform: scale(0);
     transform-origin: bottom;
     position: relative;
-    right: 31px;
-    
+    right: -32px;    
 }
 .menu__coeur:hover .plein {
-    /*opacity: 1;*/
     transform: scale(1);    
+}
+.menu__coeur {
+    display: flex;
+    flex-direction: row-reverse;
 }
 /*-------------------------------------------------------------------------------------------*/
