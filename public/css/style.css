@@ -562,9 +562,19 @@ form {
     transform: rotateZ(360deg);
 }
 /*EFFETS COEURS*/
-
-
-
-
-
+/*<i class="fas fa-heart"></i>*/
+.fas {
+    zoom: 105%;
+    color: #FF79DA;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0);
+    transform-origin: bottom;
+    position: relative;
+    right: 31px;
+}
+.menu__coeur:hover .fas {
+    opacity: 1;
+    transform: scale(1);    
+}
 /*-------------------------------------------------------------------------------------------*/
