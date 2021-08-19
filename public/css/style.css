@@ -331,15 +331,6 @@ form {
     position: relative;
     top:-2rem;
 }
-.restopastille__nomenclature--byline,
- .restopastille__nomenclature--titre,
-  .restopastille__BAS,
-   .restopastille__nomenclature,
-    .restopastille a {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 .restopastille__nomenclature {
     color: black;
 }
