@@ -113,6 +113,13 @@ h1 {
     font-size: 1.25rem;    
 }
 /*PASTILLES des PLATS*/
+/*prix collés à droite*/
+.menu__pastille {
+    justify-content: flex-end;
+}
+.menu__pastille__cotegauche {
+    flex-grow: 8;
+}
 .menu__liste {
     display: flex;
     flex-direction: column;
