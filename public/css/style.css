@@ -539,7 +539,7 @@ form {
 .fa-check-circle {
     color: #FFFFFF;
     font-size: 1.2rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .menu__pastille--validation {
     display: flex;
@@ -550,12 +550,12 @@ form {
     top: 11px;
     width: 30%;
     max-width: 0;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
+    overflow: hidden;    
     background-color: #99E2D0;
     font-size: 1.2rem;
     border-top-right-radius:0.7rem ;
-    border-bottom-right-radius:0.7rem ;
+    border-bottom-right-radius:0.7rem;
+    transition: all 0.5s ease-in-out;
 }
 .menu__pastille:hover .menu__pastille--validation {
     max-width: 50px;
